@@ -5,16 +5,19 @@
 # KAMUS
     # Variabel
         # m : integer { banyak baris matriks }
-        # n : integer { banyak kolom matriks }
+        # n : integer { banyak kolom matriks } { n dibuat sama dengan m untuk membuat matriks persegi }
         # lines1 : array of integer { angka yang akan ditulis ke file matrix1.csv }
         # lines2 : array of integer { angka yang akan ditulis ke file matrix2.csv }
         # count : integer { indeks matriks saat penulisan ke file }
+        # namafile1, namafile2 : string { nama file tempat menulis matriks }
 # ALGORITMA UTAMA
 
 from random import randint
 
-m = int(input("masukkan banyak baris matriks:\n>>> "))
-n = int(input("masukkan banyak kolom matriks:\n>>> "))
+#m = int(input("masukkan banyak baris matriks:\n>>> "))
+#n = int(input("masukkan banyak kolom matriks:\n>>> "))
+m = int(input("masukkan ukuran matriks:\n>>> "))
+n = m
 lines1 = []
 lines2 = []
 
@@ -25,8 +28,14 @@ for k in range(m):
 
 count = 0
 
-f1 = open("matrix1.csv",'w')
-f2 = open("matrix2.csv",'w')
+#f1 = open("matrix1.csv",'w')
+#f2 = open("matrix2.csv",'w')
+
+namafile1 = input("File Matriks 1\n>>> ")
+namafile2 = input("File Matriks 2\n>>> ")
+f1 = open(namafile1,'w')
+f2 = open(namafile2,'w')
+
 
 for k in range(m):
     for j in range(n):

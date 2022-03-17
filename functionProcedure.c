@@ -3,7 +3,7 @@
     // maka implementasi fungsi akan dibuat di file .c terpisah dan deklarasi/prototipenya pada file .h terpisah
 // KAMUS    
     // Konstanta
-        // maxSize : integer := 1023 { ukuran maksimum baris/kolom matriks }
+        // maxSize : integer := 511 { ukuran maksimum baris/kolom matriks }
         // MAX_LEN : integer := 255 { ukuran maksimum string}
     // Fungsi/Prosedur
         // procedure cetakMatriks(input : int matriks (maxSize x maxSize) of integer arr,integer nbaris,integer nkolom)
